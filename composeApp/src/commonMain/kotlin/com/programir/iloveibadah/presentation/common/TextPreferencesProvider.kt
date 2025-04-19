@@ -8,7 +8,7 @@ import com.programir.iloveibadah.domain.model.TextDisplayPreferences
 val LocalTextPreferences = compositionLocalOf { TextDisplayPreferences() }
 
 @Composable
-fun WithTextPrefs(prefs: TextDisplayPreferences, content: @Composable () -> Unit) {
+fun WithTextPreferences(prefs: TextDisplayPreferences, content: @Composable () -> Unit) {
     CompositionLocalProvider(LocalTextPreferences provides prefs) {
         content()
     }
